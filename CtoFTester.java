@@ -8,12 +8,16 @@ public class CtoFTester{
 	}
 	
 	public static double fahrenheitToCelsius(double fahrenheit){
-		return 1.0;
+		double toCConvert = (fahrenheit - 32) * 5.0/9.0;
+		return toCConvert;
 	}
 	
 	public static void main(String[]args){
 		System.out.println("Hello, world!");
 		System.out.println(celsiusToFahrenheit(0));
 		System.out.println(celsiusToFahrenheit(100));
+		System.out.println(fahrenheitToCelsius(32));
+		System.out.println(fahrenheitToCelsius(212));
+		System.out.println(fahrenheitToCelsius(celsiusToFahrenheit(79.7)));
 	}
 }
